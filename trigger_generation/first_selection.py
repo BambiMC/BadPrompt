@@ -126,7 +126,7 @@ if __name__ == '__main__':
     # model_args = ClassificationArgs(eval_batch_size=1)
     # model = ClassificationModel("roberta", "fine-tuned-all", cuda_device=2)
     model_args = ClassificationArgs()
-    model = ClassificationModel("roberta", "../your/clean_model", cuda_device=3)
+    model = ClassificationModel("roberta", "FacebookAI/roberta-large", cuda_device=3)
 
     trigger_num_list = [1,2,3,4,5,6] # try more trigger length ~
     for i in trigger_num_list:
